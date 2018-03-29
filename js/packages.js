@@ -1,3 +1,4 @@
 document.addEventListener('click',function(e){
-  sessionStorage.setItem('package', JSON.stringify(e.target.id))
+  let package = e.target.id;
+  sessionStorage.setItem('package', package);
 });
