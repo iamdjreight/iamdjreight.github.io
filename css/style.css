@@ -179,6 +179,9 @@ nav {
 }
 
 /* EVENT CALENDAR */
+.events {
+	width: 100%;
+}
 .events thead {
 	background: #b60000;
 	border-radius: 10px;
