@@ -3,6 +3,16 @@
 		font-size: 3rem;
 	}
 }
+@keyframes transition-right {
+	100% {
+		margin-left: 0;
+	}
+}
+@keyframes transition-down {
+	100% {
+		margin-top: 0;
+	}
+}
 
 
 html {
@@ -179,10 +189,20 @@ nav {
 	background-color: rgba(182, 0, 0, 0.2);
 }
 
-/* EVENTS PAGE END */
+#remix {
+	position: relative;
+	margin-left: -400%;
+	animation: transition-right 2s ease forwards;
+	animation-delay: 1s;
+}
+
 /* EVENT CALENDAR */
 .events {
+	position: relative;
 	width: 100%;
+	margin-top: -90vh;
+	animation: transition-down 2s ease forwards;
+	animation-delay: 1s;
 }
 .events thead {
 	background: #b60000;
@@ -207,6 +227,9 @@ table th:last-child{
   border-radius:0 10px 0 0;
 }
 /* EVENT CALENDAR END */
+
+
+/* EVENTS PAGE END */
 
 /* PACKAGES PAGE */
 .packages-page {
