@@ -191,9 +191,8 @@ nav {
 
 #remix {
 	position: relative;
-	margin-left: -400%;
+	margin-left: -500%;
 	animation: transition-right 2s ease forwards;
-	animation-delay: 1s;
 }
 
 /* EVENT CALENDAR */
