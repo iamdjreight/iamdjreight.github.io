@@ -191,7 +191,7 @@ nav {
 
 #remix {
 	position: relative;
-	margin-left: -500%;
+	margin-left: -200vw;
 	animation: transition-right 2s ease forwards;
 }
 
