@@ -1,3 +1,3 @@
 document.addEventListener('click',function(e){
-  sessionStorage.setItem('id', e.target.id);
+  sessionStorage.setItem('package', e.target.id);
 });

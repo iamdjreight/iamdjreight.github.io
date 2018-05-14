@@ -3,17 +3,6 @@
 		font-size: 3rem;
 	}
 }
-/* @keyframes transition-right {
-	100% {
-		margin-left: 0;
-	}
-}
-@keyframes transition-down {
-	100% {
-		margin-top: 0;
-	}
-} */
-
 
 html {
   position: relative;
@@ -189,13 +178,6 @@ nav {
 	border-radius: 5%;
 	background-color: rgba(182, 0, 0, 0.2);
 }
-
-/* #remix {
-	position: relative;
-	margin-left: -400%;
-	animation: transition-right 2s ease forwards;
-	animation-delay: 1s;
-} */
 
 /* EVENT CALENDAR */
 .events {
