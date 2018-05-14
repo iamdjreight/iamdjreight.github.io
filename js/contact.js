@@ -1,2 +1,2 @@
-const package = sessionStorage.getItem('package');
+const package = sessionStorage.getItem('id');
 document.getElementById(package).checked = true;
