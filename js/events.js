@@ -64,7 +64,6 @@ function addToCalendar(event) {
   <td>${event.date}</td>
   <td>${event.venue}</td>
   <td>${event.time}</td>
-  <td><a href="#" class="delete">X</a></td>
   `;
 
   tableBody.appendChild(row);
