@@ -16,7 +16,6 @@ let database = firebase.database();
 let ref = database.ref('events');
 
 // Query DB - init UI once
-// ref.on('value', getDBData, DBerror);
 ref.once('value', getDBData, DBerror);
 
 
@@ -30,10 +29,7 @@ function getDBData(data) {
     let venue = eventData[key].venue;
     let time = eventData[key].time;
 
-    // console.log(key, date, venue, time);
-
     events.push(new Event(key, date, venue, time));
-    // events.push(new Event(key, date, venue, time));
   })
 
   createCalendar(events);
@@ -68,7 +64,6 @@ function clearInputs() {
 
 function createCalendar(events) {
   events.forEach(event => {
-    // console.log(event);
     addToCalendar(event);
   });
 }
@@ -132,14 +127,3 @@ document.querySelector('tbody').addEventListener('click', function (e) {
   database.ref(`events/${DBid}`).remove();
 });
 
-// Clear calendar UI
-function clearCalendar() {
-  let tableBody = document.querySelector('tbody');
-  let children = tableBody.hasChildNodes();
-
-  while (children) {
-    tableBody.deleteRow(0);
-  }
-  
-  ref.on('value', getDBData, DBerror);
-}
