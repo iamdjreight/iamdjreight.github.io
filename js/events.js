@@ -20,7 +20,8 @@
   // Query DB - init UI once
   ref.once('value', getDBData, DBerror);
 
-
+ firebase.auth().signOut();
+  
   function getDBData(data) {
     let eventData = data.val();
     let keys = Object.keys(eventData);
@@ -71,6 +72,5 @@
     tableBody.appendChild(row);
   }
   
-  firebase.auth().signOut();
 
 }());
