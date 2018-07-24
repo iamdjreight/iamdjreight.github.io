@@ -32,23 +32,15 @@
     promise.catch(e => console.log(e.message));
   });
 
-  // // logout
-  // logoutBtn.addEventListener('click', e => {
-  //   firebase.auth().signOut()
-  //   window.location.href = 'login.html';    
-  // });
 
   // realtime listener
   firebase.auth().onAuthStateChanged(firebaseUser => {
     if(firebaseUser) {
       console.log("Login successful!");
       window.location.href = 'calendarCMS.html';
-      // logoutBtn.classList.remove('d-none');
     }
     else {
       console.log("Not logged in");
-      // logoutBtn.classList.add('d-none');
-
     }
   });
 
