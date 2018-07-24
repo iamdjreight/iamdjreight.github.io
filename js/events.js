@@ -54,6 +54,7 @@
     events.forEach(event => {
       addToCalendar(event);
     });
+    firebase.auth().signOut();
   }
 
   // Add to UI
