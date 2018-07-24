@@ -11,6 +11,8 @@
   };
 
   firebase.initializeApp(config);
+  
+  firebase.auth().signInAnonymously();
 
   let database = firebase.database();
   let ref = database.ref('events');
