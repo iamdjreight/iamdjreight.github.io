@@ -54,7 +54,6 @@
     events.forEach(event => {
       addToCalendar(event);
     });
-    firebase.auth().signOut();
   }
 
   // Add to UI
@@ -71,5 +70,7 @@
 
     tableBody.appendChild(row);
   }
+  
+  firebase.auth().signOut();
 
 }());
