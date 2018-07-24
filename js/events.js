@@ -75,4 +75,4 @@
 
 }());
 
-firebase.auth().signOut();
+
