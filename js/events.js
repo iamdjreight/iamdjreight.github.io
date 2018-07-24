@@ -71,5 +71,4 @@
     tableBody.appendChild(row);
   }
 
-  location.reload();
 }());
