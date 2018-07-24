@@ -12,7 +12,7 @@
 
   firebase.initializeApp(config);
   
-  firebase.auth().signInAnonymously();
+  //firebase.auth().signInAnonymously();
 
   let database = firebase.database();
   let ref = database.ref('events');
@@ -22,6 +22,8 @@
 
 
   function getDBData(data) {
+    firebase.auth().signInAnonymously();
+    
     let eventData = data.val();
     let keys = Object.keys(eventData);
     let events = [];
@@ -35,6 +37,8 @@
     })
 
     createCalendar(events);
+    
+    firebase.auth().signOut();
   }
 
   function DBerror(error) {
