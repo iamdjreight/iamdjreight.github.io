@@ -136,8 +136,8 @@
   const logoutBtn = document.getElementById('logout');
 
   logoutBtn.addEventListener('click', e => {
-    firebase.auth().signOut()
-    window.location.href = 'events.html';
+    firebase.auth().signOut();
+    window.location.href = 'login.html';
   });
 
 }());
