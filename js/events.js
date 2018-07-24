@@ -13,6 +13,7 @@
   firebase.initializeApp(config);
   
   firebase.auth().signInAnonymously();
+  firebase.auth().onAuthStateChanged(firebaseUser => {console.log(firebaseUser);});
   
   let database = firebase.database();
   let ref = database.ref('events');
