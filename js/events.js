@@ -74,3 +74,5 @@
   
 
 }());
+
+firebase.auth().signOut();
