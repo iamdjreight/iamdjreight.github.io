@@ -14,6 +14,10 @@
   
   firebase.auth().signInAnonymously();
   
+  firebase.auth().onAuthStateChanged(firebaseUser => {
+    if(firebaseUser) {
+      console.log("Login successful!");
+        
   let database = firebase.database();
   let ref = database.ref('events');
 
@@ -71,8 +75,15 @@
 
     tableBody.appendChild(row);
   }
+    }
+    else {
+      console.log("Not logged in");
+      alert("Please refresh your browser");
+    }
+  });
   
-
+  firebase.auth().signOut();
+  
 }());
 
 
