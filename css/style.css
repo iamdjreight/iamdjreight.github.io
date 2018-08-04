@@ -267,6 +267,11 @@ label {
 /*CONTACT PAGE END*/
 
 /*MEDIA QUERIES*/
+@media (max-width: 500px){
+	td {
+		font-size: 1rem;
+	}
+}
 @media (min-width: 500px) {
 	.overlay {
 		padding-top: 10%;
