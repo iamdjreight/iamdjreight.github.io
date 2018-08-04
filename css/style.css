@@ -268,8 +268,8 @@ label {
 
 /*MEDIA QUERIES*/
 @media (max-width: 500px){
-	td {
-		font-size: 1rem;
+	tbody td {
+		font-size: 0.8rem;
 	}
 }
 @media (min-width: 500px) {
