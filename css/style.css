@@ -61,7 +61,7 @@ nav {
 	background-image: url('../img/scratchingb&w-resize.jpg');
 }
 .slide3 {
-	background-image: url('../img/lights.jpg');
+	background-image: url('../img/thanksgivingbash2.jpg');
 }
 .overlay {
 	position: absolute;
@@ -267,11 +267,6 @@ label {
 /*CONTACT PAGE END*/
 
 /*MEDIA QUERIES*/
-@media (max-width: 500px){
-	tbody td {
-		font-size: 0.8rem;
-	}
-}
 @media (min-width: 500px) {
 	.overlay {
 		padding-top: 10%;
@@ -303,6 +298,10 @@ label {
 	}
 	#packages .card-body {
 		font-size: 1.7rem;
+	}
+	.slide3{
+		background-size: contain;
+		background-repeat: repeat;
 	}
 }
 
