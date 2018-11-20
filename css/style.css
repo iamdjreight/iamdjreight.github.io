@@ -62,6 +62,8 @@ nav {
 }
 .slide3 {
 	background-image: url('../img/thanksgivingbash2.jpg');
+	background-size: contain;
+	background-position: top center;
 }
 .overlay {
 	position: absolute;
@@ -300,7 +302,6 @@ label {
 		font-size: 1.7rem;
 	}
 	.slide3{
-		background-size: contain;
 		background-repeat: repeat;
 	}
 }
