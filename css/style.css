@@ -61,9 +61,9 @@ nav {
 	background-image: url('../img/scratchingb&w-resize.jpg');
 }
 .slide3 {
-	background-image: url('../img/thanksgivingbash2.jpg');
+	background-image: url('../img/nye19.jfif');
 	background-size: contain;
-	background-position: top center;
+	background-position: center 30px;
 }
 .overlay {
 	position: absolute;
