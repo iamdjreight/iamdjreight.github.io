@@ -13,6 +13,7 @@ body {
 	/*font-family: 'Roboto', san-serif;*/
 	font-family: 'Pompiere', cursive; 
 	min-height: 100vh;
+	overflow-x: hidden;
 }
 
 .nav-link {
